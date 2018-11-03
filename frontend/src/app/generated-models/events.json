@@ -1,0 +1,42 @@
+{
+  "title" : "Event",
+  "properties" : {
+    "sessions" : {
+      "title" : "Sessions",
+      "readOnly" : false,
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/session"
+      }
+    },
+    "title" : {
+      "title" : "Title",
+      "readOnly" : false,
+      "type" : "string"
+    },
+    "slug" : {
+      "title" : "Slug",
+      "readOnly" : false,
+      "type" : "string"
+    }
+  },
+  "definitions" : {
+    "session" : {
+      "type" : "object",
+      "properties" : {
+        "title" : {
+          "title" : "Title",
+          "readOnly" : false,
+          "type" : "string"
+        },
+        "room" : {
+          "title" : "Room",
+          "readOnly" : false,
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "type" : "object",
+  "$schema" : "http://json-schema.org/draft-04/schema#"
+}
